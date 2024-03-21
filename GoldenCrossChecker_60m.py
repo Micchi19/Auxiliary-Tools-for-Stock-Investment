@@ -8,7 +8,7 @@ yf.pdr_override()
 
 golden_cross_checker = []
 
-for i in range(9501, 9502): # for i in range(1300, 10001):
+for i in range(1300, 10001):
     code_i = str(i) + ".T"
     try:
         data_60m = yf.download(code_i, period="30d", interval="30m") # DataFrameに株価情報を格納(60足)
